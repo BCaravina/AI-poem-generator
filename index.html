@@ -5,37 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Poem Generator</h1>
-    </header>
+    <div class="exterior-container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
 
-    <main>
-      <div class="exterior-container">
-        <input
-          type="text"
-          id="text-input"
-          placeholder="Type your word here"
-          required
-          autofocus
-          autocomplete="off"
-        />
-        <input type="submit" value="Create" />
+      <main>
+        <form action="" method="post">
+          <input
+            type="text"
+            id="text-input"
+            placeholder="Type your word here"
+            required
+            autofocus
+            autocomplete="off"
+          />
+          <input type="submit" value="Create Poem" id="submit-button" />
+        </form>
         <div class="poem-container">
           Poem will be displayed here
           <br />
           And here...
         </div>
-      </div>
-    </main>
+      </main>
 
-    <footer>
-      Created by
-      <a href="https://github.com/Biscatrix" class="signature">Bia C.</a> and
-      hosted on
-      <a href="https://poem-generator-pt-br.netlify.app/">Netlify</a>
-    </footer>
+      <footer>
+        Created by
+        <a href="https://github.com/Biscatrix" class="signature">Bia C.</a> and
+        hosted on
+        <a href="https://poem-generator-pt-br.netlify.app/">Netlify</a>
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
