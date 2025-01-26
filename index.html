@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="exterior-container">
@@ -17,7 +19,7 @@
       </header>
 
       <main>
-        <form action="" method="post">
+        <form action="" method="post" id="poem-form">
           <input
             type="text"
             id="text-input"
@@ -28,13 +30,7 @@
           />
           <input type="submit" value="Create Poem" id="submit-button" />
         </form>
-        <div class="poem-container">
-          <p>
-            Poem will be displayed here <br />
-            And here... <br />
-            And another line here <br />
-          </p>
-        </div>
+        <div class="poem-container" id="poem"></div>
       </main>
 
       <footer>
