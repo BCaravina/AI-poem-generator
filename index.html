@@ -19,11 +19,30 @@
       </header>
 
       <main>
+        <label for="languages"
+          >Select the desired language output for your poem:</label
+        >
+        <br />
+        <label>
+          <input
+            type="radio"
+            name="language"
+            value="portuguese"
+            checked
+          />Portuguese
+        </label>
+        <label>
+          <input type="radio" name="language" value="english" />English
+        </label>
+        <label>
+          <input type="radio" name="language" value="spanish" />Spanish
+        </label>
+
         <form action="" method="post" id="poem-form">
           <input
             type="text"
             id="text-input"
-            placeholder="Choose the topic of your poem"
+            placeholder="Type a topic for the poem"
             required
             autofocus
             autocomplete="off"
