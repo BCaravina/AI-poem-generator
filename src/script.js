@@ -1,5 +1,4 @@
 async function generatePoem(response) {
-  //   let poemText = document.querySelector("#poem");
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
@@ -19,14 +18,5 @@ async function getApiResponse(event) {
   const apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(generatePoem);
-
-  document.getElementById("poem").textContent = new Typewriter("#poem", {
-    strings: "Creating a poem for you...",
-    autoStart: true,
-    cursor: "",
-    loop: true,
-  });
 }
 document.getElementById("poem-form").addEventListener("submit", getApiResponse);
-// let formElement = document.querySelector("#poem-form");
-// formElement.addEventListener("submit", getApiResponse);

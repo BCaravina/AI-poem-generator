@@ -1,6 +1,6 @@
 body {
   background-color: rgba(246, 238, 227, 0.8);
-  font-family: Baskerville;
+  font-family: "Baskervville", serif;
   font-weight: normal;
 }
 
@@ -18,10 +18,9 @@ body {
 
 h1 {
   margin: 0;
-  font-family: "Gotham", "Montserrat", sans-serif;
   text-align: center;
   color: rgba(0, 0, 0, 0.75);
-  font-size: 38px;
+  font-size: 42px;
   padding: 20px;
 }
 
@@ -58,10 +57,12 @@ form {
 .poem-container {
   padding: 20px;
   margin: 15px auto;
-  font-size: 18px;
+  /* font-family: "Baskervville", serif; */
+  /* font-size: 20px; */
+  font-family: "Italianno", serif;
+  font-size: 32px;
   text-align: left;
   max-width: 70%;
-  /* font-family:; */
   background-color: rgba(246, 238, 227, 0.465);
   color: #8a8077;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
