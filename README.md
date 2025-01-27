@@ -1,2 +1,2 @@
-# Portuguese-poem-generator
- AI generated application that outputs a poem in Brazilian Portuguese form a single word (not necessarily in Portuguese) input.
+# AI-poem-generator
+An AI application that generates a poem in Portuguese, English or Spanish based on the user's input. 
