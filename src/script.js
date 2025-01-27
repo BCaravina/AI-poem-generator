@@ -1,4 +1,7 @@
-async function generatePoem(response) {
+function generatePoem(response) {
+  const userInput = document.querySelector("#text-input");
+  userInput.value = "";
+
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
@@ -22,8 +25,11 @@ async function getApiResponse(event) {
   const apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(generatePoem);
-  setTimeout(() => {
-    userInput.value = "";
-  }, 3000);
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+
+  poemElement.innerHTML = `<div class="blinking"> Generating poem about ${userInput.value}  ⏳...</div>`;
 }
+
 document.getElementById("poem-form").addEventListener("submit", getApiResponse);
