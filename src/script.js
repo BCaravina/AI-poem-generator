@@ -19,7 +19,7 @@ async function getApiResponse(event) {
 
   const apiKey = "c49ed490tce5aa3a51c741aaobee84ef";
   const context =
-    "You are a poet that writes romantic poems no longer than 6 lines. Separate each line with a <br /> and do not include a title to the poem";
+    "You are a poet that writes romantic poems no longer than 4 lines. Separate each line with a <br /> and do not include a title to the poem";
   const userInput = document.querySelector("#text-input");
   let prompt = `Generate a poem in ${selectedLanguage} from the word ${userInput.value}`;
   const apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
